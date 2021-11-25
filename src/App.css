@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+    --box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7f7f7;
+    max-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    margin: 10px auto;
+}
+
+.main,
+.history,
+.add-transaction {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 700px;
+}
+
+.balance {
+    padding-bottom: 30px;
+}
+
+h1 {
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+h3 {
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 7px;
+    margin: 20px 0 10px;
+}
+
+h4 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+
+.inc-exp-container {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.inc-exp-container>div {
+    flex: 1;
+    text-align: center;
+}
+
+.inc-exp-container>div:first-of-type {
+    border-right: 1px solid #dedede;
+}
+
+.money {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+.money.plus {
+    color: #2ecc71;
+}
+
+.money.minus {
+    color: #c0392b;
+}
+
+label {
+    display: inline-block;
+    margin: 10px 0;
+}
+
+input[type='text'],
+input[type='date'],
+input[type='number'],
+select {
+    border: 1px solid #dedede;
+    border-radius: 2px;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: #9c88ff;
+    box-shadow: var(--box-shadow);
+    color: #fff;
+    border: 0;
+    display: block;
+    font-size: 16px;
+    margin: 10px 0 30px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:focus,
+.delete-btn:focus {
+    outline: 0;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.list li {
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.list li.plus {
+    border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+    border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+    cursor: pointer;
+    background-color: #e74c3c;
+    border: 0;
+    color: #fff;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    right: -48px;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+    opacity: 1;
+}
+
+.total-value {
+    float: right;
+}
+
+
+.color-box {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.box {
+    width: 2px;
+    padding: 5px;
+    margin: 2px;
+}
+
+.blue-box {
+    border: 1px solid #0088FE;
+    background-color: #0088FE;
+}
+
+.green-box {
+    border: 1px solid #00C49F;
+    background-color: #00C49F;
+}
+
+.orange-box {
+    border: 1px solid #FF8042;
+    background-color: #FF8042;
+}
+
+.card {
+    height: 500px;
+}
+
+.card-body {
+    margin: 0 auto;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+.offline-message {
+    background-color: rgb(214, 12, 12);
+    width: 800px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    margin: 200px auto;
+}
+
+.offline-message h1 {
+    padding: 5px;
+    font-size: 18px;
+}
